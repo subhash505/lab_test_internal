@@ -1,0 +1,61 @@
+1] To chekc vesrion of Docker 
+
+ sudo docker --version
+
+2] Install docker -
+
+sudo yum install docker
+
+
+3] To check content in docker
+
+sudo yum whatprovides docker
+
+4] To start docker engine 
+
+  sudo systemctl start docker
+  
+  sudo service docker start
+
+5] To chekc status of Docker
+
+  sudo systemctl status docker
+
+6] To check docker imgages
+
+  sudo docker images
+
+If empty then create images by creating new folder
+ Use ls, mkdir folder_name , Use cd then 
+
+Then create the python script using Vim editor 
+
+To exit vim editor use :wq
+
+
+Now create docker file using vi Dockerfile (casesensitive)
+
+copy a from code as standard format, then exit editor
+
+7] Now Build that file (test.py) in image   (To create docker images)
+
+  sudo docker build -t prog .    #Here prog  is name of image
+
+  check images using -->  sudo docker images
+
+8] To Run the images
+
+   sudo docker run prog (name of image)
+
+
+9] To see the running containers
+
+  sudo docker ps -a
+
+10] To create docker images in detached mode use
+
+  sudo docker run -it -d imageName (prog)
+
+  sudo docker stop container id  
+ 
+  
